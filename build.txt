@@ -1,0 +1,3 @@
+displayName = Alt Trouble
+author = mifoxti
+version = 0.1

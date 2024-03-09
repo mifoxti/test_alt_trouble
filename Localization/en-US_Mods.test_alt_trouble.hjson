@@ -1,0 +1,13 @@
+# This file will automatically update with entries for new content after a build and reload
+
+Items: {
+	AltSword: {
+		DisplayName: Broken Alt Sword
+		Tooltip: There is a lot of power in it, they say the whole redan trembled at the mention of this weapon
+	}
+
+	AltWorckbench: {
+		DisplayName: Alt Worckbench
+		Tooltip: ""
+	}
+}

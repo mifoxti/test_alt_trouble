@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "oqD0XVHifmnPkvr+0xiu5XlBjOpHyjLDRByezj0kRrTejM2KWP7EdyN0eHM7XgWv7Vqz+yDla1GyWK7vkeydyw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\timof\\OneDrive\\Документы\\My Games\\Terraria\\tModLoader\\ModSources\\test_alt_trouble\\test_alt_trouble.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\timof\\.nuget\\packages\\tmodloader.codeassist\\0.1.5\\tmodloader.codeassist.0.1.5.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\timof\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,13 @@
+# This file will automatically update with entries for new content after a build and reload
+
+Items: {
+	AltSword: {
+		DisplayName: Сломанный меч альтернативы
+		Tooltip: В нем заключена большая сила, говорят, весь редан дрожал при упоминании этого орудия
+	}
+
+	AltWorckbench: {
+		// DisplayName: Alt Worckbench
+		// Tooltip: ""
+	}
+}
