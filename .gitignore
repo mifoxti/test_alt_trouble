@@ -1,0 +1,8 @@
+bin/
+obj/
+*.tmod
+*.dll
+*.pdb
+*.user
+*.suo
+.vs/

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>TheLastTestament</AssemblyName>
+    <TargetFramework>net8.0</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <TML_INSTALL_PATH Condition="'$(TML_INSTALL_PATH)' == ''">C:\Program Files (x86)\Steam\steamapps\common\tModLoader</TML_INSTALL_PATH>
+  </PropertyGroup>
+
+  <Import Project="$(TML_INSTALL_PATH)\tMLMod.targets" Condition="Exists('$(TML_INSTALL_PATH)\tMLMod.targets')" />
+
+  <Target Name="RequireTModLoaderTargets" BeforeTargets="PrepareForBuild" Condition="!Exists('$(TML_INSTALL_PATH)\tMLMod.targets')">
+    <Error Text="Set TML_INSTALL_PATH to the tModLoader installation folder. The stable tModLoader build targets net8.0." />
+  </Target>
+</Project>
