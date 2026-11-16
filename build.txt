@@ -1,3 +1,4 @@
-displayName = Alt Trouble
+displayName = The Last Testament
 author = mifoxti
-version = 0.1
+version = 0.1.0
+homepage = https://github.com/mifoxti/test_alt_trouble
