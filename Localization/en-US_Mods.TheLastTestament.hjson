@@ -1,5 +1,10 @@
 Mods: {
 	TheLastTestament: {
 		DisplayName: The Last Testament
+		Keybinds: {
+			PhaseShift: {
+				DisplayName: Phase Shift
+			}
+		}
 	}
 }
