@@ -8,6 +8,6 @@ Planned mechanics: temporary ritual candles, Triangle of Binding, Pentagram of S
 
 ## Specter
 
-Specter is an independent damage class built around phasing, delayed echoes, and Soul Fracture. The initial resource model tracks Ethereality, regeneration, phase duration, and cooldown. The phase state does not yet change collision or grant immunity; those combat rules will be implemented and tested with the phase mechanic.
+Specter is an independent damage class built around phasing, delayed echoes, and Soul Fracture. Phase Shift is bound to Left Shift by default and can be remapped in tModLoader's Controls menu. It costs a configurable amount of Ethereality, avoids incoming hits for a brief window, and then enters a configurable cooldown. The action is requested by the client and validated by the server in multiplayer. It does not disable tile collision or let the player pass through terrain. The phase has no custom sprite, trail, or animation yet; those visuals are waiting for pixel-art review.
 
 Planned mechanics: a bounded Phase Shift, non-recursive Spectral Echo, and Soul Fracture with a controlled boss interaction.

@@ -1,4 +1,5 @@
 using Terraria;
+using Terraria.GameInput;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
@@ -81,6 +82,18 @@ public sealed class ClassResourcePlayer : ModPlayer
             Player.statDefense -= config.HighCorruptionDefensePenalty;
     }
 
+    public override void ProcessTriggers(TriggersSet triggersSet)
+    {
+        if (TheLastTestament.PhaseShiftKeybind.JustPressed)
+            TheLastTestament.RequestPhaseShift(Player.whoAmI);
+    }
+
+    public override bool FreeDodge(Player.HurtInfo info)
+    {
+        // Phase Shift avoids hits for a short window but never disables tile collision.
+        return IsPhasing;
+    }
+
     public override void Initialize()
     {
         Corruption = 0;
@@ -117,18 +130,6 @@ public sealed class ClassResourcePlayer : ModPlayer
         copy.PhaseCooldown = PhaseCooldown;
         copy.IsPhasing = IsPhasing;
         copy.phaseTimeLeft = phaseTimeLeft;
-    }
-
-    public override void SendClientChanges(ModPlayer clientPlayer)
-    {
-        ClassResourcePlayer previous = (ClassResourcePlayer)clientPlayer;
-        bool meaningfulChange = Corruption != previous.Corruption
-            || System.Math.Abs(Ether - previous.Ether) >= 5
-            || IsPhasing != previous.IsPhasing
-            || (PhaseCooldown == 0) != (previous.PhaseCooldown == 0);
-
-        if (meaningfulChange && Main.netMode == NetmodeID.MultiplayerClient && Player.whoAmI == Main.myPlayer)
-            TheLastTestament.SendResourceState(Player.whoAmI);
     }
 
     public override void SyncPlayer(int toWho, int fromWho, bool newPlayer)
