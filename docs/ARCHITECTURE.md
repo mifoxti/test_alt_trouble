@@ -13,10 +13,12 @@
 | `Content/DamageClasses` | Independent Occultist and Specter damage types. |
 | `Common/Players` | Per-player class resources and temporary class states. |
 | `Common/Systems` | Balance settings and world progression persistence. |
+| `Common/NPCs` | Small shared helpers for Cursed Grove enemy state and targeting. |
+| `Content/NPCs/CursedGrove` | Three bespoke enemy state machines and their hostile projectiles. |
 | `Localization` | English and Russian player-facing strings. |
 | `Tools/AssetGeneration` | Reproducible, source-controlled sprite generation. |
 
-Future NPC, boss, combat, rendering, UI, and world-generation systems will be kept in focused modules. Multiplayer actions that affect combat will be validated on the server, while graphics and interface code will be client-only.
+The first Cursed Grove enemy AI implementations now live in focused `ModNPC` classes. NPC state and hostile projectile spawning are synchronized through tModLoader; damaging projectiles are created by the server or the single-player client. The dedicated biome, world generation, animation sheets, bosses, and class-combat content remain future modules.
 
 ## Resources
 
