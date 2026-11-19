@@ -16,7 +16,7 @@
 - Сборка с новыми противниками прошла. Запуск в Terraria и игровые сценарии ещё не проверялись.
 - Художественные направления Исповедника и Серафима согласованы на уровне концепт-превью; финальные спрайты и листы анимаций будут пиксельными и проходят отдельное согласование.
 
-См. [архитектуру](docs/ARCHITECTURE.md), [предложение по визуальному стилю](docs/ART_DIRECTION_PROPOSAL.md), [исследование Subworld Library](docs/SUBWORLDS.md) и [статус проверок](docs/TESTING.md).
+См. [архитектуру](docs/ARCHITECTURE.md), [предложение по визуальному стилю](docs/ART_DIRECTION_PROPOSAL.md), [требования к анимации](docs/ANIMATION_DIRECTION.md), [исследование Subworld Library](docs/SUBWORLDS.md) и [статус проверок](docs/TESTING.md).
 
 ## Сборка
 
